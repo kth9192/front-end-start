@@ -1,0 +1,44 @@
+#board{
+  display : inline-block;
+  width:200px;
+  height:200px;
+  line-height:0%;
+}
+
+#red{  display : inline-block;
+  background-color : red;
+    width:40px;
+    height:40px;}
+
+
+#non_red_black{background-color : black;
+        display : inline-block;
+        width:40px;
+        height:40px;
+        border: 1px solid;
+        margin-right:-6px;
+        }
+
+#non_red_white{background-color : white;
+        display : inline-block;
+        width:40px;
+        height:40px;
+        border: 1px solid;
+        margin-right:-6px;
+      }
+
+.black{background-color : black;
+        display : inline-block;
+        width:40px;
+        height:40px;
+        border: 1px solid;
+        margin-right:-6px;
+        }
+
+.white{background-color : white;
+        display : inline-block;
+        width:40px;
+        height:40px;
+        border: 1px solid;
+        margin-right:-6px;
+      }
