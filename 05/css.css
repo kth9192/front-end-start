@@ -1,0 +1,14 @@
+#becon{
+	background : url(http://cdn1.iconfinder.com/data/icons/oxygen/48x48/actions/go-up.png);
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	bottom: 20px;
+    right: 30px;	
+}
+
+#스크롤생성용{
+	background-color: #eee;
+	width: 80px;
+	height: 3000px;
+}

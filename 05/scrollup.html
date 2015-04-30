@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>위로가기 버튼 만들기</title>
+  <link href="css.css" rel="stylesheet" type="text/css" />
+  <script src="//code.jquery.com/jquery-1.11.0.min.js">
+  </script>
+
+<script>
+
+$(document).ready(function(){ //페이지가 켜지자마자 실행되는 함수 ready
+		$('#becon').hide();
+});
+
+
+	$(window).scroll(function(){	//창에서 스크롤 행동이 일어나면 실행되는 함수 scroll
+		 var y = $(this).scrollTop();// 수직 스크롤값을 넣어줌
+			
+			console.log("hide");	
+
+		if (y == 0) { // 스크롤이 처음위치면 안보임
+    		$('#becon').fadeOut();
+    		console.log($('becon').scrollTop());
+    	}
+
+    	else{ //스크롤이 움직였으면 버튼보임
+    		$('#becon').fadeIn();
+    		console.log($('becon').scrollTop());
+    	}
+	});
+	
+
+	
+	$('#becon').click(function(){ // 클릭시 동작하는 함수 
+		$('html.body').animate({scrollTop : 0 } );//html에 body에서 동작. animate는 ~하는 행동.
+	});
+			
+
+</script>
+
+</head>
+
+<body>
+<div id="top">여기가 위</div>
+
+<div id="스크롤생성용"></div> <!--스크롤을 나타낼려고 일부러 영역을 잡음 -->
+<span>
+<a href="#" id="becon"></a><!-- 화살표 -->
+</span>
+</body>
+</html>
+
